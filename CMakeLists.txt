@@ -64,6 +64,7 @@ PRIVATE
     mainwindowform.ui
     RCCantileverForm.ui
     rcc.h rcc.cpp
+    concreteDrawer.h concreteDrawer.cpp
 ) 
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
 target_include_directories(${PROJECT_NAME} PRIVATE)

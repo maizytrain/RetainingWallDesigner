@@ -10,6 +10,8 @@
 namespace Ui {class MainWindowForm;}
 namespace Ui {class RCCantileverForm;}
 
+class rcc;
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -28,6 +30,7 @@ public slots:
 private:
     Ui::MainWindowForm *mMainWindowUI;
     Ui::RCCantileverForm *mRccFormUI;
+    rcc *mRcc;
 };
 
 #endif // MAINWINDOW_H

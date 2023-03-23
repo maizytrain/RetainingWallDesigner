@@ -77,7 +77,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
+              <widget class="QDoubleSpinBox" name="heightSpin"/>
              </item>
              <item>
               <widget class="QLabel" name="label_2">
@@ -118,7 +118,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QDoubleSpinBox" name="doubleSpinBox_2"/>
+              <widget class="QDoubleSpinBox" name="embedmentSpin"/>
              </item>
              <item>
               <widget class="QLabel" name="label_4">
@@ -159,7 +159,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QDoubleSpinBox" name="doubleSpinBox_3"/>
+              <widget class="QDoubleSpinBox" name="widthSpin"/>
              </item>
              <item>
               <widget class="QLabel" name="label_6">
@@ -200,7 +200,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QDoubleSpinBox" name="doubleSpinBox_5"/>
+              <widget class="QDoubleSpinBox" name="extensionSpin"/>
              </item>
              <item>
               <widget class="QLabel" name="label_10">
@@ -241,7 +241,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QDoubleSpinBox" name="doubleSpinBox_4"/>
+              <widget class="QDoubleSpinBox" name="thicknessSpin"/>
              </item>
              <item>
               <widget class="QLabel" name="label_8">
@@ -282,7 +282,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QDoubleSpinBox" name="doubleSpinBox_6"/>
+              <widget class="QDoubleSpinBox" name="depthSpin"/>
              </item>
              <item>
               <widget class="QLabel" name="label_12">

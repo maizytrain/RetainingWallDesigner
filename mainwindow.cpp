@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "rcc.h"
 #include "ui_mainwindowform.h"
 #include "ui_RCCantileverForm.h"
 
@@ -26,4 +27,5 @@ void MainWindow::create_rcc_wall()
 {
     mRccFormUI = new Ui::RCCantileverForm;
     mRccFormUI->setupUi(mMainWindowUI->dummyWidget);
+    mRcc = new rcc(mRccFormUI);
 }
