@@ -1,0 +1,3 @@
+#define PDSRetainingWallDesigner_VERSION_MAJOR @PDSRetainingWallDesigner_VERSION_MAJOR@
+#define PDSRetainingWallDesigner_VERSION_MINOR @PDSRetainingWallDesigner_VERSION_MINOR@
+#define PDSRetainingWallDesigner_VERSION_PATH @PDSRetainingWallDesigner_VERSION_PATCH@
