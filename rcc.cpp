@@ -28,6 +28,16 @@ rcc::rcc(Ui::RCCantileverForm *form)
     connect(mForm->angleSpin, SIGNAL(valueChanged(double)), this, SLOT(set_angle()));
 
     view->scale(1,-1);
+
+    set_height();
+    set_width();
+    set_thickness();
+    set_extension();
+    set_depth();
+    set_embedment();
+    set_angle();
+
+    update_drawing();
 }
 
 rcc::~rcc()
@@ -79,7 +89,7 @@ void rcc::update_drawing()
         ypoints[i] *= 50;
     }
 
-    DrawLines(scene, xpoints, ypoints, *embedment, *angle);
+    DrawWallAndSoil(scene, xpoints, ypoints, *embedment, *angle);
 
     //view->fitInView((-(*height)*.1), (-(*width)*.1), *height * 1.1, *width * 1.1);
     scene->setSceneRect(QRectF((-(*width)*10), (-(*height)*10), *width * 70, *height * 70));

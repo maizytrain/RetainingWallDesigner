@@ -2,7 +2,7 @@
 #include <vector>
 #include <QDebug>
 
-void DrawLines(QGraphicsScene *scene, std::vector<float> xpoints, std::vector<float> ypoints, float embedment, float topAngle)
+void DrawWallAndSoil(QGraphicsScene *scene, std::vector<float> xpoints, std::vector<float> ypoints, float embedment, float topAngle)
 {
     scene->clear();
 
