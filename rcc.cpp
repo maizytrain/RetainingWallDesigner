@@ -17,6 +17,7 @@ rcc::rcc(Ui::RCCantileverForm *form)
     extensionBack = new float(0);
     depth = new float(0);
     embedment = new float(0);
+    angle = new float(0);
 
     connect(mForm->heightSpin, SIGNAL(valueChanged(double)), this, SLOT(set_height()));
     connect(mForm->widthSpin, SIGNAL(valueChanged(double)), this, SLOT(set_width()));
@@ -24,6 +25,7 @@ rcc::rcc(Ui::RCCantileverForm *form)
     connect(mForm->extensionSpin, SIGNAL(valueChanged(double)), this, SLOT(set_extension()));
     connect(mForm->depthSpin, SIGNAL(valueChanged(double)), this, SLOT(set_depth()));
     connect(mForm->embedmentSpin, SIGNAL(valueChanged(double)), this, SLOT(set_embedment()));
+    connect(mForm->angleSpin, SIGNAL(valueChanged(double)), this, SLOT(set_angle()));
 
     view->scale(1,-1);
 }
@@ -77,7 +79,7 @@ void rcc::update_drawing()
         ypoints[i] *= 50;
     }
 
-    DrawLines(scene, xpoints, ypoints);
+    DrawLines(scene, xpoints, ypoints, *embedment, *angle);
 
     //view->fitInView((-(*height)*.1), (-(*width)*.1), *height * 1.1, *width * 1.1);
     scene->setSceneRect(QRectF((-(*width)*10), (-(*height)*10), *width * 70, *height * 70));
@@ -119,5 +121,11 @@ void rcc::set_depth()
 void rcc::set_embedment()
 {
     *embedment = mForm->embedmentSpin->value();
+    update_drawing();
+}
+
+void rcc::set_angle()
+{
+    *angle = mForm->angleSpin->value();
     update_drawing();
 }

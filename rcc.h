@@ -25,6 +25,7 @@ public slots:
     void set_extension();
     void set_depth();
     void set_embedment();
+    void set_angle();
 
 private:
     Ui::RCCantileverForm *mForm;
@@ -38,6 +39,7 @@ private:
     float *extensionBack;
     float *depth;
     float *embedment;
+    float *angle;
 };
 
 #endif // RCC_H
